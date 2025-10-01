@@ -33,4 +33,10 @@ const untilNum = (num) => {
     }
 
 }
-untilNum(42)
+// untilNum(42)
+
+const multiply = (num1, num2) => {
+    return num1 * num2;
+}
+
+// multiply(3, 7.5)
