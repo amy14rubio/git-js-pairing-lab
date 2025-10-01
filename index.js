@@ -42,9 +42,14 @@ const multiply = (num1, num2) => {
 // multiply(3, 7.5)
 
 
-
-
-
+const add = (num1, num2) => {
+    if (num1 !== num2) {
+        return num1 + num2
+    } else {
+        return num1 + num2 * 3
+    }
+}
+// console.log(add(10, -5))
 
 
 const isNegative = (num) => {
@@ -54,4 +59,6 @@ const isNegative = (num) => {
         return false
     }
 }
-console.log(isNegative(Math.PI))
+// console.log(isNegative(Math.PI))
+
+
