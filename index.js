@@ -40,3 +40,18 @@ const multiply = (num1, num2) => {
 }
 
 // multiply(3, 7.5)
+
+
+
+
+
+
+
+const isNegative = (num) => {
+    if (num < 0) {
+        return true
+    } else {
+        return false
+    }
+}
+console.log(isNegative(Math.PI))
