@@ -5,7 +5,7 @@ const fiveToOneHundred = () => {
     }
 }
 
-// fiveToOneHundred();
+fiveToOneHundred();
 
 
 const multiplesOfThree = () => {
@@ -14,7 +14,7 @@ const multiplesOfThree = () => {
     }
 
 }
-// multiplesOfThree()
+multiplesOfThree()
 
 const multiplesOfThreeOrFive = () => {
     for (let i = 1; i <= 100; i++) {
@@ -24,7 +24,7 @@ const multiplesOfThreeOrFive = () => {
 
     }
 }
-// multiplesOfThreeOrFive()
+multiplesOfThreeOrFive()
 
 
 const untilNum = (num) => {
@@ -33,13 +33,13 @@ const untilNum = (num) => {
     }
 
 }
-// untilNum(42)
+untilNum(42)
 
 const multiply = (num1, num2) => {
     return num1 * num2;
 }
 
-// multiply(3, 7.5)
+multiply(3, 7.5)
 
 
 const add = (num1, num2) => {
@@ -49,7 +49,7 @@ const add = (num1, num2) => {
         return num1 + num2 * 3
     }
 }
-// console.log(add(10, -5))
+console.log(add(10, -5))
 
 
 const isNegative = (num) => {
@@ -59,13 +59,13 @@ const isNegative = (num) => {
         return false
     }
 }
-// console.log(isNegative(Math.PI))
+console.log(isNegative(Math.PI))
 
 
 const triangleArea = (num1, num2) => {
     return num1 * num2 * .5
 }
-// console.log(triangleArea(5, 7))
+console.log(triangleArea(5, 7))
 
 const betweenTwentyAndFourty = (num) => {
     if (num > 20 && num < 40) {
@@ -76,3 +76,16 @@ const betweenTwentyAndFourty = (num) => {
 }
 
 console.log(betweenTwentyAndFourty(40))
+
+
+
+const largest = (num1, num2, num3) => {
+    if (num1 > num2 && num1 > num3) {
+        return num1
+    } else if (num2 > num1 && num2 > num3) {
+        return num2
+    } else {
+        return num3
+    }
+}
+console.log(largest(30, 22, 17))
