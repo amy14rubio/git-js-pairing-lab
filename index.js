@@ -28,7 +28,6 @@ const untilNum = (num) => {
     for (let i = 1; i <= num; i++) {
         console.log(i);
     }
-
 }
 untilNum(42);
 
@@ -71,7 +70,7 @@ const betweenTwentyAndFourty = (num) => {
     } else {
         return false;
     }
-}
+}     
 console.log(betweenTwentyAndFourty(40));
 
 
@@ -87,9 +86,6 @@ const largest = (num1, num2, num3) => {
 console.log(largest(30, 22, 17));
 
 
-
-//BONUS ODD NUMBERS
-
 //11
 const printTime = () => {
     const t = new Date(); //new customizable Date object
@@ -104,12 +100,17 @@ const printTime = () => {
 console.log(printTime());
 
 
-
-
-
-
-
-
+//12
+const isLeapYear = (year) => {
+    if (year % 4 === 0 && year % 100 !== 0) {
+        return true;
+    } else if (year % 400 === 0 && year % 100 === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+console.log(isLeapYear(1999));
 
 
 //13
@@ -125,10 +126,12 @@ const getExtention = (file) => {
 console.log(getExtention("README.md"));
 
 
-
-
-
-
+//14
+const absoluteNineteen = (num) => {
+    let abs = Math.abs(num - 19);
+    return num > 19 ? abs * 3 : abs;
+}
+console.log(absoluteNineteen(11));
 
 
 //15
@@ -150,3 +153,17 @@ const switchLetters = (word) => {
     return switched;
 }
 console.log(switchLetters("hello world"));
+
+
+//16
+const changeString = (str) => {
+    let newStr = "";
+    for (let i = 0; i < str.length; i++) {
+        //get character number
+        let findChar = str.charCodeAt(i);
+        //shift char by 1 and add it to newStr
+        newStr += String.fromCharCode(findChar + 1);
+    }
+    return newStr;
+}
+console.log(changeString("helloworld"));
